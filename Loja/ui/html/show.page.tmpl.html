@@ -1,0 +1,15 @@
+{{template "base" .}}
+{{define "title"}} Produto {{.ID}} {{end}}
+{{define "body"}}
+  <div class="snippet">
+    <div class="metadata">
+      <strong>{{.NOME}}</strong>
+      <span>#{{.ID}}</span>
+    </div>
+    <pre> <code>R$ {{.PRECO}}</code> </pre>
+    <div class="metadata">
+      <time>Created: {{.Created}}</time>
+      <time>Expires: {{.Expires}}</time>
+    </div>
+  </div>
+{{end}}

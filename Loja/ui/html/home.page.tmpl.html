@@ -1,0 +1,24 @@
+{{template "base" .}}
+{{define "title"}} Home {{end}}
+{{define "body"}}
+  <h2>Últimos Produtos</h2>
+  {{if .}}
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Created</th>
+        <th>Id</th>
+      </tr>
+      {{range .}}
+        <tr>
+          <td> <a href="/Produto?id={{.ID}}">{{.NOME}}</a></td>
+          <td>{{.Created}}</td>
+          <td>{{.ID}}</td>
+        </tr>
+      {{end}}
+      
+    </table>
+  {{else}}
+    <p>Nenhum produto Válido no momento ...</p>
+  {{end}}
+{{end}}
