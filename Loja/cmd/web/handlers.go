@@ -308,6 +308,66 @@ func(app *application) ConfirmacaoCompra (rw http.ResponseWriter, r *http.Reques
   }
 }
 
+
+func(app *application) Cadastro (rw http.ResponseWriter, r *http.Request){
+  if r.URL.Path != "/Cadastro"{
+    app.notFound(rw)
+    return
+  }
+
+  produtos, err := app.produtos.Latest()
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+
+  files := []string{
+    "./ui/html/Cadastro.html",
+  }
+  ts, err := template.ParseFiles(files...)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+  err = ts.Execute(rw, produtos)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+}
+
+
+func(app *application) Login (rw http.ResponseWriter, r *http.Request){
+  if r.URL.Path != "/Login"{
+    app.notFound(rw)
+    return
+  }
+
+  produtos, err := app.produtos.Latest()
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+
+  files := []string{
+    "./ui/html/Login.html",
+  }
+  ts, err := template.ParseFiles(files...)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+  err = ts.Execute(rw, produtos)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+}
+
+
+
+
+
 func(app *application) ConversorMoedas (rw http.ResponseWriter, r *http.Request){
   if r.URL.Path != "/Produtos/ConversorMoedas"{
     app.notFound(rw)

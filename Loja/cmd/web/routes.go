@@ -17,6 +17,8 @@ func (app *application) routes() *http.ServeMux {
   mux.HandleFunc("/Produtos/Compra/Confirmacao", app.ConfirmacaoCompra)
   mux.HandleFunc("/Produtos/ConversorMoedas", app.ConversorMoedas)
   mux.HandleFunc("/Produto", app.showProduto)
+  mux.HandleFunc("/Cadastro", app.Cadastro)
+  mux.HandleFunc("/Login", app.Login)
   mux.HandleFunc("/Produto/create", app.createProduto)
   mux.HandleFunc("/Produto/Lista", app.PaginaListaProdutos)
   fileServer := http.FileServer(http.Dir("./ui/static/"))
