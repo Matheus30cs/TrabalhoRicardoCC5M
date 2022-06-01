@@ -14,7 +14,7 @@ function convert(){
   var valorEmReal = 0;
   var valorConvertido = 0;
   //converter
-  if(mIn == "dolar"){
+  /*if(mIn == "dolar"){
     valorEmReal = valorConverter*5.46;
   }else if(mIn == "euro"){
     valorEmReal = valorConverter*5.89;
@@ -22,7 +22,7 @@ function convert(){
     valorEmReal = valorConverter*6.75;
   }else{
     valorEmReal = valorConverter;
-  }
+  }*/
 
   if(mOut == "dolar"){
     valorConvertido = valorEmReal/5.46;
@@ -30,9 +30,9 @@ function convert(){
     valorConvertido = valorEmReal/5.89;
   }else if(mOut == "libra"){
     valorConvertido = valorEmReal/6.75;
-  }else{
+  }/*else{
     valorConvertido = valorEmReal;
-  }
+  }*/
 
   //exibir o resultado
   var outRes = document.getElementById("resultado");
