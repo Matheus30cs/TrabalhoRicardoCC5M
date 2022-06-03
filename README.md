@@ -2,8 +2,32 @@
 
 • Descrição do projeto
 
-• Link para vídeo de apresentação do projeto (mostrando o funcionamento de todas funcionalidades)
+O Projeto consiste em um site de Compra de Produtos Eletrodomésticos, o Nome do Site se chama KingEletros.
+Basicamente o Site temos 4 abas:
 
+1 - Home/Inicio
+2 - Produtos
+3 - Login
+4 - Cadastro
+
+Dentro de Produtos temos os Eletrodomésticos disponíveis na Loja. Abaixo da seleção dos produtos temos o Link "Eletrodomésticos no Banco", que vai mostrar uma página
+com detalhes técnicos dos produtos registrados no Banco de Dados.
+
+Quando clicamos na imagem de um produto nós somos direcionados a uma página com as informações dele, botão quero comprar abaixo da página temos o Link Conversor de 
+Moedas, que é um sistema onde podemos converter o valor real para Dolar, Euro ou Libra caso a moeda que você tenha posse seja diferente do real.
+
+Quando clicamos no botão Quero Comprar, somos levados a uma tela de compra e no fim precisamos inserir o nosso Nome + CEP antes de confirmar a compra.
+
+Depois de confirmado, pronto, compra feita com sucesso.
+
+Login e Cadastro são funcionalidades que tentei implementar.
+
+Não faz muita diferença para o resto do site mas eram funções que queria colocar.
+
+No Cadastro nós temos: E-Mail, Nome, Sobrenome, Senha e Confirmar Senha
+Já no Login temos: E-Mail e Senha.
+
+• Link para vídeo de apresentação do projeto (mostrando o funcionamento de todas funcionalidades)
 
 • Documentação (como descrição dos dados no BD)
 
