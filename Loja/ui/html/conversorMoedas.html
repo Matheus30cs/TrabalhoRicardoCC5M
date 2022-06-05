@@ -3,19 +3,59 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <script src="/static/js/scriptCMoedas.js"></script>
+    <title>Conversor Moedas</title>
+    <link href="/static/css/styleCMoedas.css" rel="stylesheet" type="text/css" />
+    <!--<script src="/static/js/scriptCMoedas.js"></script>-->
+    <link rel='shortcut icon' href='/static/img/cropped-Design-sem-nome-4.png' type='image/x-icon'>
+    <script>
+      function convert(){
+  //pegar o valor
+  var quant = document.getElementById("quantia");
+  var valorConverter = quant.value; //Recebe o valor o valor digitado pelo usuario;
 
+  //pegar a moeda de entrada
+  var moedaIn = document.querySelector('input[name="in"]:checked');
+  var mIn = moedaIn.value;  //pega o valor selecionado pelo usuario.
+
+  //pegar a moeda de saida
+  var moedaOut = document.querySelector('input[name="out"]:checked');
+  var mOut = moedaOut.value; //pega o valor selecionado pelo usuario.
+
+  var valorEmReal = 0;
+  var valorConvertido = 0;
+  //converter
+  if(mIn == "dolar"){
+    valorEmReal = valorConverter*4.77;
+  }else if(mIn == "euro"){
+    valorEmReal = valorConverter*5.12;
+  }else if(mIn == "libra"){
+    valorEmReal = valorConverter*5.96;
+  }else{
+    valorEmReal = valorConverter;
+  }
+
+  if(mOut == "dolar"){
+    valorConvertido = valorEmReal/4.77;
+  }else if(mOut == "euro"){
+    valorConvertido = valorEmReal/5.12;
+  }else if(mOut == "libra"){
+    valorConvertido = valorEmReal/5.96;
+  }else{
+    valorConvertido = valorEmReal;
+  }
+
+  //exibir o resultado
+  var outRes = document.getElementById("resultado");
+  outRes.innerHTML = valorConvertido;
+}
+</script>
   </head>
   <body>
-    <h1>Conversor de Moedas JS</h1>
+    <h1>Conversor de Moedas</h1>
     <div>
       <div>
         <p>Moeda de Entrada:</p>
         <input type="radio" name="in" value="real" checked/> REAL <br>
-        <!--<input type="radio" name="in" value="dolar"/> DOLAR <br>
-        <input type="radio" name="in" value="euro"/> EURO <br>
-        <input type="radio" name="in" value="libra"/> LIBRA <br>-->
       </div>
 
       <div>
@@ -25,7 +65,7 @@
 
       <div>
         <p>Moeda de Saída:</p>
-        <!--<input type="radio" name="out" value="real" checked/> REAL <br>-->
+        <input type="radio" name="out" value="real" checked/> REAL <br>
         <input type="radio" name="out" value="dolar"/> DOLAR <br>
         <input type="radio" name="out" value="euro"/> EURO <br>
         <input type="radio" name="out" value="libra"/> LIBRA <br>
