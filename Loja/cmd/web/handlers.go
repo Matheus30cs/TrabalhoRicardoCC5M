@@ -466,7 +466,7 @@ func(app *application) showProduto(rw http.ResponseWriter, r *http.Request){
   
 }
 
-func(app *application) createProduto(rw http.ResponseWriter, r *http.Request){
+func(app *application) createProdutoAs(rw http.ResponseWriter, r *http.Request){
   
   nome := "Aspirador de Pó"
   preco := 201.90
@@ -482,7 +482,7 @@ func(app *application) createProduto(rw http.ResponseWriter, r *http.Request){
 
   http.Redirect(rw, r, fmt.Sprintf("/Produto?id=%d", id),http.StatusSeeOther)
 
-  if r.URL.Path != "/Produto/create"{
+  if r.URL.Path != "/Produto/create/Aspirador"{
     app.notFound(rw)
     return
   }
@@ -511,6 +511,69 @@ func(app *application) createProduto(rw http.ResponseWriter, r *http.Request){
 
   //rw.Write([]byte("Criar novo Snippet"))
 }
+
+
+func(app *application) createProdutoLiq(rw http.ResponseWriter, r *http.Request){
+  
+  nome := "Liquidificador"
+  preco := 159.90
+  created := "7"
+  expires := "7"
+  
+  //id, err := app.snippets.Insert(title, content, expires)
+  id, err := app.produtos.Insert(nome, preco, created, expires)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+
+  http.Redirect(rw, r, fmt.Sprintf("/Produto?id=%d", id),http.StatusSeeOther)
+
+  if r.URL.Path != "/Produto/create/Liquidificador"{
+    app.notFound(rw)
+    return
+  }
+
+  produtos, err := app.produtos.Latest()
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+
+  files := []string{
+    "./ui/html/home.page.tmpl.html",
+    "./ui/html/base.layout.tmpl.html",
+    "./ui/html/footer.partial.tmpl.html",   
+  }
+  ts, err := template.ParseFiles(files...)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+  err = ts.Execute(rw, produtos)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+
+  //rw.Write([]byte("Criar novo Snippet"))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //curl -igp -X POST http://localhost:4000/snippet/create
 //curl -i -X GET http://localhost:4000/snippet/create
 
