@@ -9,8 +9,8 @@ type ProdutoModel struct{
   DB *sql.DB
 }
 
-func(m *ProdutoModel)Insert(nome string, preco float64, expires string) (int, error){
-  stmt := `INSERT INTO produtos (nome, preco, created, expires) VALUES (?, ?, ?)`
+func(m *ProdutoModel)Insert(nome string, preco float64, created string, expires string) (int, error){
+  stmt := `INSERT INTO produtos (nome, preco, created, expires) VALUES (?, ?, UTC_TIMESTAMP(),DATE_ADD(UTC_TIMESTAMP(),INTERVAL ? DAY))`
 
   result, err := m.DB.Exec(stmt, nome, preco, expires)
   if err != nil{

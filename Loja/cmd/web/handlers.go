@@ -467,25 +467,75 @@ func(app *application) showProduto(rw http.ResponseWriter, r *http.Request){
 }
 
 func(app *application) createProduto(rw http.ResponseWriter, r *http.Request){
-  if r.Method != "POST"{
-    rw.Header().Set("Allow","POST")
-    app.clientError(rw, http.StatusMethodNotAllowed)
-    return
-  }
-
-  nome := "Matheus"
-  preco := 799.90
+  
+  nome := "Aspirador de Pó"
+  preco := 201.90
+  created := "7"
   expires := "7"
   
   //id, err := app.snippets.Insert(title, content, expires)
-  id, err := app.produtos.Insert(nome, preco, expires)
+  id, err := app.produtos.Insert(nome, preco, created, expires)
   if err != nil{
     app.serverError(rw, err)
     return
   }
 
   http.Redirect(rw, r, fmt.Sprintf("/Produto?id=%d", id),http.StatusSeeOther)
+
+  if r.URL.Path != "/Produto/create"{
+    app.notFound(rw)
+    return
+  }
+
+  produtos, err := app.produtos.Latest()
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+
+  files := []string{
+    "./ui/html/home.page.tmpl.html",
+    "./ui/html/base.layout.tmpl.html",
+    "./ui/html/footer.partial.tmpl.html",   
+  }
+  ts, err := template.ParseFiles(files...)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+  err = ts.Execute(rw, produtos)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+
   //rw.Write([]byte("Criar novo Snippet"))
 }
 //curl -igp -X POST http://localhost:4000/snippet/create
 //curl -i -X GET http://localhost:4000/snippet/create
+
+
+/*
+func(app *application) createSnippet(rw http.ResponseWriter, r *http.Request){
+  if r.Method != "POST"{
+    rw.Header().Set("Allow","POST")
+    app.clientError(rw, http.StatusMethodNotAllowed)
+    return
+  }
+
+  title := "Aula de hoje"
+  content := "Tentando lidar com o Banco de Dados"
+  expires := "7"
+
+  id, err := app.snippets.Insert(title, content, expires)
+
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+
+  http.Redirect(rw, r, fmt.Sprintf("/snippet?id=%d", id),http.StatusSeeOther)
+  //rw.Write([]byte("Criar novo Snippet"))
+}
+//curl -igp -X POST http://localhost:4000/snippet/create
+//curl -i -X GET http://localhost:4000/snippet/create*/
