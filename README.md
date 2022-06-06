@@ -10,10 +10,17 @@ Basicamente o Site temos 4 abas:
 3 - Login
 4 - Cadastro
 
-Dentro de Produtos temos os Eletrodomésticos disponíveis na Loja. Abaixo da seleção dos produtos temos o Link "Eletrodomésticos no Banco", que vai mostrar uma página
-com detalhes técnicos dos produtos registrados no Banco de Dados.
+Dentro de Produtos temos os Eletrodomésticos disponíveis na Loja. Abaixo da seleção dos produtos temos o Link "Eletrodomésticos no Banco de dados", que vai mostrar uma página com detalhes técnicos dos produtos registrados no Banco de Dados.
 
-Quando clicamos na imagem de um produto nós somos direcionados a uma página com as informações dele, botão quero comprar abaixo da página temos o Link Conversor de 
+Nessa página temos as abas: 
+
+1 - Home - Que vai levar de volta para a página principal do site.
+2 - Listas Produtos - Página em que estamos atualmente, a página da lista dos produtos do Banco.
+3 - Adicionar Aspirador - Insere o Produto Aspirador no Banco.
+4 - Adicionar Liquidificador - Insere o Produto Liquidificador no Banco.
+
+
+Voltando para os produtos do site principal, quando clicamos na imagem de um produto nós somos direcionados a uma página com as informações dele, botão quero comprar abaixo da página temos o Link Conversor de 
 Moedas, que é um sistema onde podemos converter o valor real para Dolar, Euro ou Libra caso a moeda que você tenha posse seja diferente do real.
 
 Quando clicamos no botão Quero Comprar, somos levados a uma tela de compra e no fim precisamos inserir o nosso Nome + CEP antes de confirmar a compra.
@@ -29,7 +36,7 @@ Já no Login temos: E-Mail e Senha.
 
 • Link para vídeo de apresentação do projeto (mostrando o funcionamento de todas funcionalidades)
 
-https://www.youtube.com/watch?v=N4apwjeP0oE
+https://www.youtube.com/watch?v=dWNUknLCBbc
 
 • Documentação (como descrição dos dados no BD)
 
