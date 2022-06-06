@@ -29,7 +29,7 @@ Já no Login temos: E-Mail e Senha.
 
 • Link para vídeo de apresentação do projeto (mostrando o funcionamento de todas funcionalidades)
 
-
+https://www.youtube.com/watch?v=N4apwjeP0oE
 
 • Documentação (como descrição dos dados no BD)
 
