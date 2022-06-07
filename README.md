@@ -42,6 +42,14 @@ https://www.youtube.com/watch?v=dWNUknLCBbc
 
 A Tabela que resolvi criar foi a Tabela Produtos, e cada tabela de produtos terá: id, Nome, preco, created, expires (os dois últimos servem para determinar o tempo que o produto estará disponível). Todas as informações inseridas são de produtos que estão disponíveis no site por enquanto. se no futuro mais produtos novos chegarem, a tabela receberá informações dos novos produtos.
 
+
+
+![Banco de Dados](https://user-images.githubusercontent.com/62408199/172451632-9d6b26a4-fe4b-4d10-a9b8-34254ddb9962.PNG)
+
+
+
+
+
 -- Create a `produtos` table.
 CREATE TABLE produtos (
 id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -84,5 +92,6 @@ DATE_ADD(UTC_TIMESTAMP(), INTERVAL 365 DAY)
 );
 
 SELECT id, nome, preco, expires FROM produtos;
+
 
 
