@@ -1,6 +1,6 @@
 # TrabalhoRicardoCC5M
 
-• Descrição do projeto
+**Descrição do projeto**
 
 O Projeto consiste em um site de Compra de Produtos Eletrodomésticos, o Nome do Site se chama KingEletros.
 Basicamente no Site tem 4 abas:
@@ -34,11 +34,11 @@ Não faz muita diferença para o resto do site mas eram funções que queria col
 No Cadastro nós temos: E-Mail, Nome, Sobrenome, Senha e Confirmar Senha
 Já no Login temos: E-Mail e Senha.
 
-• Link para vídeo de apresentação do projeto (mostrando o funcionamento de todas funcionalidades)
+**Link para vídeo de apresentação do projeto (mostrando o funcionamento de todas funcionalidades)**
 
 https://www.youtube.com/watch?v=dWNUknLCBbc
 
-• Documentação (como descrição dos dados no BD)
+**Documentação (como descrição dos dados no BD)**
 
 A Tabela que resolvi criar foi a Tabela Produtos, e cada tabela de produtos terá: id, Nome, preco, created, expires (os dois últimos servem para determinar o tempo que o produto estará disponível). Todas as informações inseridas são de produtos que estão disponíveis no site por enquanto. se no futuro mais produtos novos chegarem, a tabela receberá informações dos novos produtos.
 
