@@ -40,7 +40,7 @@ https://www.youtube.com/watch?v=dWNUknLCBbc
 
 **Documentação (como descrição dos dados no BD)**
 
-A Tabela que resolvi criar foi a Tabela Produtos, e cada tabela de produtos terá: id, Nome, preco, created, expires (os dois últimos servem para determinar o tempo que o produto estará disponível). Todas as informações inseridas são de produtos que estão disponíveis no site por enquanto. se no futuro mais produtos novos chegarem, a tabela receberá informações dos novos produtos.
+A Tabela que resolvi criar foi a Tabela Produtos, e cada tabela de produtos terá: id, Nome, preco, created, expires (os dois últimos servem para determinar o tempo que o produto terá este preço disponível). Todas as informações inseridas são de produtos que estão disponíveis no site por enquanto. se no futuro mais produtos novos chegarem, a tabela receberá informações dos novos produtos.
 
 
 
