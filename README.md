@@ -26,7 +26,7 @@ Nessa página temos as abas:
 4 - Adicionar Liquidificador - Insere o Produto Liquidificador no Banco.
 
 
-Voltando para os produtos do site principal, quando clicamos na imagem de um produto nós somos direcionados a uma página com as informações dele, botão quero comprar abaixo da página temos o Link Conversor de 
+Voltando para os produtos do site principal, quando clicamos na imagem de um produto nós somos direcionados a uma página com as informações dele. Lá também temos botão (quero comprar) e abaixo da página temos o Link Conversor de 
 Moedas, que é um sistema onde podemos converter o valor real para Dolar, Euro ou Libra caso a moeda que você tenha posse seja diferente do real.
 
 Quando clicamos no botão Quero Comprar, somos levados a uma tela de compra e no fim precisamos inserir o nosso Nome + CEP antes de confirmar a compra.
