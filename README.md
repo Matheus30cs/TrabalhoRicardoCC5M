@@ -1,5 +1,7 @@
 # TrabalhoRicardoCC5M
 
+Meu nome é Matheus de Carvalho Souza - Aluno do CC5M e este é o meu projeto.
+
 **Descrição do projeto**
 
 O Projeto consiste em um site de Compra de Produtos Eletrodomésticos, o Nome do Site se chama KingEletros.
