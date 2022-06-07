@@ -6,8 +6,11 @@ O Projeto consiste em um site de Compra de Produtos Eletrodomésticos, o Nome do
 Basicamente no Site tem 4 abas:
 
 1 - Home/Inicio
+
 2 - Produtos
+
 3 - Login
+
 4 - Cadastro
 
 Dentro de Produtos temos os Eletrodomésticos disponíveis na Loja. Abaixo da seleção dos produtos temos o Link "Eletrodomésticos no Banco de dados", que vai mostrar uma página com detalhes técnicos dos produtos registrados no Banco de Dados.
