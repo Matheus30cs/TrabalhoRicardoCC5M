@@ -65,7 +65,7 @@ A Tabela que resolvi criar foi a Tabela Produtos, e cada tabela de produtos ter�
 
 No início estava disponível apenas os 4 primeiros IDs, mas após a implementação de adicionar produtos: Liquidificadores e Aspirador apareceram na tabela Produtos.
 
-O Código abaixo foi o usado para originar a tabelo Produtos no Banco de Dados:
+O Código abaixo foi o usado para originar a tabela Produtos no Banco de Dados:
 
 
 -- Create a `produtos` table.
