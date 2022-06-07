@@ -15,8 +15,11 @@ Dentro de Produtos temos os Eletrodomésticos disponíveis na Loja. Abaixo da se
 Nessa página temos as abas: 
 
 1 - Home - Que vai levar de volta para a página principal do site.
+
 2 - Listas Produtos - Página em que estamos atualmente, a página da lista dos produtos do Banco.
+
 3 - Adicionar Aspirador - Insere o Produto Aspirador no Banco.
+
 4 - Adicionar Liquidificador - Insere o Produto Liquidificador no Banco.
 
 
