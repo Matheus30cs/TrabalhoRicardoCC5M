@@ -2,7 +2,7 @@
 
 Meu nome é Matheus de Carvalho Souza - Aluno do CC5M e este é o meu projeto.
 
-**Descrição do projeto**
+# Descrição do projeto
 
 O Projeto consiste em um site de Compra de Produtos Eletrodomésticos, o Nome do Site se chama KingEletros.
 Basicamente no Site tem 4 abas:
@@ -43,11 +43,11 @@ No Cadastro nós temos: E-Mail, Nome, Sobrenome, Senha e Confirmar Senha
 
 Já no Login temos: E-Mail e Senha.
 
-**Link para vídeo de apresentação do projeto (mostrando o funcionamento de todas funcionalidades)**
+# Link para vídeo de apresentação do projeto (mostrando o funcionamento de todas funcionalidades)
 
 https://www.youtube.com/watch?v=dWNUknLCBbc
 
-**Documentação (como descrição dos dados no BD)**
+# Documentação (como descrição dos dados no BD)
 
 Imagem a seguir mostra as rotas que foram utilizadas no site. No vídeo eu explico direitinho cada rota.
 
