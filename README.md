@@ -46,8 +46,9 @@ A Tabela que resolvi criar foi a Tabela Produtos, e cada tabela de produtos ter�
 
 ![Banco de Dados](https://user-images.githubusercontent.com/62408199/172451632-9d6b26a4-fe4b-4d10-a9b8-34254ddb9962.PNG)
 
+No início estava disponível apenas os 4 primeiros IDs, mas após a implementação de adicionar produtos: Liquidificadores e Aspirador apareceram na tabela Produtos.
 
-
+O Código abaixo foi o usado para originar a tabelo Produtos no Banco de Dados:
 
 
 -- Create a `produtos` table.
