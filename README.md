@@ -3,7 +3,7 @@
 • Descrição do projeto
 
 O Projeto consiste em um site de Compra de Produtos Eletrodomésticos, o Nome do Site se chama KingEletros.
-Basicamente o Site temos 4 abas:
+Basicamente no Site tem 4 abas:
 
 1 - Home/Inicio
 2 - Produtos
